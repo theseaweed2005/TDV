@@ -1,0 +1,103 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\marga> git cofirm --global user.name "theseaweed2005"
+git: 'cofirm' is not a git command. See 'git --help'.
+PS C:\Users\marga> cd
+PS C:\Users\marga> dir
+
+
+    Directory: C:\Users\marga
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/01/2024     14:17                .bito
+d-----        18/12/2023     09:17                .dbus-keyrings
+d-----        06/11/2023     22:43                .dotnet
+d-----        23/02/2024     11:38                .nuget
+d-----        06/11/2023     22:50                .templateengine
+d-----        11/01/2024     14:08                .vscode
+d-r---        06/11/2023     20:06                Contacts
+dar---        28/02/2024     11:37                Desktop
+d-r---        28/02/2024     11:34                Documents
+dar---        28/02/2024     11:50                Downloads
+d-r---        06/11/2023     20:06                Favorites
+d-----        28/02/2024     11:29                gh repo clone calamity-m
+d-----        28/02/2024     11:28                https
+d-----        28/02/2024     11:28                httpsgithub.com
+d-----        11/01/2024     23:57                I'm going to hit myself
+                                                  with a cartoon hammer
+d-r---        06/11/2023     20:06                Links
+d-----        28/02/2024     11:56                Monogame-2D-Game
+d-r---        06/11/2023     20:06                Music
+dar---        28/11/2023     15:02                OneDrive
+d-r---        20/02/2024     19:15                Pictures
+d-r---        06/11/2023     20:06                Saved Games
+d-r---        06/11/2023     20:25                Searches
+d-----        06/11/2023     23:03                source
+d-----        28/02/2024     12:02                TDV
+d-----        11/01/2024     17:22                The Girl on Fire
+d-r---        20/02/2024     19:15                Videos
+-a----        28/02/2024     11:29            292 .gitconfig
+-a----        28/02/2024     11:59             20 .lesshst
+-a----        07/11/2023     16:43         201431 amog us.svg
+
+
+PS C:\Users\marga> cd TDV
+PS C:\Users\marga\TDV> dir
+
+
+    Directory: C:\Users\marga\TDV
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        28/02/2024     12:02             22 README.md
+
+
+PS C:\Users\marga\TDV> git branch
+* main
+PS C:\Users\marga\TDV> git branch develop
+PS C:\Users\marga\TDV> git branch
+  develop
+* main
+PS C:\Users\marga\TDV> git checkout develop
+Switched to branch 'develop'
+PS C:\Users\marga\TDV> git branch
+* develop
+  main
+PS C:\Users\marga\TDV> git status
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        exemplo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\marga\TDV> git add .
+PS C:\Users\marga\TDV> git status
+On branch develop
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   exemplo.txt
+
+PS C:\Users\marga\TDV> git commit -m "Teste de ficheiro adicionado ou algo assim"
+[develop 48533c9] Teste de ficheiro adicionado ou algo assim
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 exemplo.txt
+PS C:\Users\marga\TDV> git push origin develop
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/theseaweed2005/TDV/pull/new/develop
+remote:
+To https://github.com/theseaweed2005/TDV.git
+ * [new branch]      develop -> develop
+PS C:\Users\marga\TDV>
